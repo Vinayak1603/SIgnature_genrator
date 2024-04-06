@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Gen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bottom">
+        <h2><u>Signature generator</u></h2>
+        <span style="font-size: 22px;">
+            Select Size:
+            <select style="width: 70px; text-align: center; font-weight: bold; font-size: 18px;" id="pensize">
+                <option value="2">2px</option>
+                <option value="3">3px</option>
+                <option value="4">4px</option>
+                <option value="5">5px</option>
+            </select>
+            <span style="margin-left: 70px;">Text Colour:</span>
+            <input style="width: 100px;" type="color" id="textColor">
+        </span><br>
+        <canvas id="Sign" width="700" height="300"></canvas><br>
+        <div>
+            <button class="red" onclick="clearform()">Clear</button>
+            <button style="margin-left: 10px;" class="viol" onclick="savesign()">Save & Download</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
